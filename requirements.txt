@@ -1,0 +1,33 @@
+# Deep Learning Framework
+torch>=2.8.0
+torchvision>=0.15.0
+
+# Computer Vision & Image Processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Quality Metrics
+scikit-image>=0.21.0
+
+# Video I/O (optional, for advanced video handling)
+av>=10.0.0
+
+# Jupyter Support
+jupyter>=1.0.0
+ipykernel>=6.25.0
+ipywidgets>=8.1.0
+
+# Utilities
+tqdm>=4.65.0
+requests>=2.31.0
+
+# Note: FFmpeg must be installed separately via system package manager
+# macOS: brew install ffmpeg
+# Ubuntu/Debian: sudo apt-get install ffmpeg
+# Windows: Download from https://ffmpeg.org/download.html

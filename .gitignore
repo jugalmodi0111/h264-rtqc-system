@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.virtualenv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb~
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+# Exception: keep the trained model
+!models/h264_quality_controller.pth
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data (large files)
+data/videos/*.mp4
+data/videos/*.avi
+data/videos/*.mov
+# Exception: keep sample videos
+!data/videos/sample-*.mp4
+
+# Outputs
+outputs/
+logs/
+runs/
+*.log
+
+# Compiled
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# FFmpeg temp files
+*.h264
+*.264
+*.yuv
+
+# matplotlib cache
+.matplotlib/
