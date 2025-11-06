@@ -31,6 +31,13 @@ Training on lightweight sample videos demonstrates clear improvement:
 The model learns to predict QP values much closer to optimal, achieving target PSNR levels more accurately.
 
 ## 🏗️ Architecture
+The system follows a spatiotemporal analysis and conditional quality-control pipeline. A 3D CNN (X3D backbone) extracts relevant motion and texture characteristics, which are subsequently conditioned on the target PSNR through Conditional Group Normalization to model quality-adaptive behavior.
+
+<p align="center">
+  <img src="assets/rtqc_pipeline.png" width="760"/>
+  <br>
+  <em>Figure 1. Real-Time H.264 Quality Control Pipeline: content-aware QP prediction conditioned on target PSNR.</em>
+</p>
 
 ### Model Components
 
@@ -50,6 +57,8 @@ The model learns to predict QP values much closer to optimal, achieving target P
    - FC layers with dropout for classification
    - Outputs: 52 classes (QP values 0-51)
    - Total parameters: ~5.8 million
+
+
 
 ### Pipeline Flow
 
